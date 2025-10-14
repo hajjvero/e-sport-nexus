@@ -15,123 +15,137 @@
     <title>E-Sport Nexus | Home</title>
 
     <!-- Preload -->
-    <link rel="preload" href="asset/css/style.css" as="style">
     <link rel="preload" href="asset/css/global.css" as="style">
+    <link rel="preload" href="asset/css/style.css" as="style">
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="asset/css/style.css">
     <link rel="stylesheet" href="asset/css/global.css">
+    <link rel="stylesheet" href="asset/css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- Javascript -->
     <script src="asset/script/app.js" defer></script>
 </head>
 <body>
-<header class="app-header">
+<header class="d-flex justify-between align-items-center py-2">
     <h1 class="app-title">E-Sport Nexus</h1>
 
     <nav>
-        <a class="app-link" href="#">Home</a>
-        <a class="app-link" href="#">Tournaments</a>
-        <a class="app-link" href="#">Teams</a>
-        <a class="app-link" href="#">Games</a>
-        <a class="app-link" href="#">Blog</a>
-        <a class="app-link" href="#">Event</a>
-        <a class="app-link" href="#">Contact</a>
+        <a class="text-decoration-none text-white font-weight-lighter mx-2 d-inline-block nav-link" href="#">Home</a>
+        <a class="text-decoration-none text-white font-weight-lighter mx-2 d-inline-block nav-link" href="#">Tournaments</a>
+        <a class="text-decoration-none text-white font-weight-lighter mx-2 d-inline-block nav-link" href="#">Teams</a>
+        <a class="text-decoration-none text-white font-weight-lighter mx-2 d-inline-block nav-link" href="#">Games</a>
+        <a class="text-decoration-none text-white font-weight-lighter mx-2 d-inline-block nav-link" href="#">Blog</a>
+        <a class="text-decoration-none text-white font-weight-lighter mx-2 d-inline-block nav-link" href="#">Event</a>
+        <a class="text-decoration-none text-white font-weight-lighter mx-2 d-inline-block nav-link" href="#">Contact</a>
     </nav>
 
-    <button class="btn-join-tournament" type="button">Join Tournament</button>
+    <button class="btn btn-gradient border-none" type="button">Join Tournament</button>
 </header>
 
-<main class="app-main">
-    <p class="paragraph-hero">Join global tournaments, discover elite teams, and dominate the leaderboard.</p>
+<main>
+    <section class="hero d-flex justify-center align-items-center flex-column rounded-2">
+        <p class="fs-3 mb-2 text-center">Join global tournaments, discover elite teams, and dominate the leaderboard.</p>
 
-    <div>
-        <button class="btn-start-competing" type="button">Start Competing</button>
+        <div>
+            <button class="btn btn-gradient border-none" type="button">Start Competing</button>
 
-        <i class="bx bx-mouse bx-fade-up bx-lg hero-icon" ></i>
+            <i class="bx bx-mouse bx-fade-up bx-lg hero-icon" ></i>
 
-        <button class="btn-watch-live" type="button">Watch Live</button>
-    </div>
+            <button class="btn btn-outline-info" type="button">Watch Live</button>
+        </div>
+    </section>
+
+    <section class="rounded-2 border-muted d-flex flex-column justify-center align-items-center gap-2 mt-3 py-3 w-50 mx-auto" style="background: linear-gradient(145deg, #0d0d16 0%, #141428 100%);">
+        <i class='bx bxs-zap bx-spin bx-lg text-info'></i>
+
+        <p class="text-pink">Ready to Join the Arena?</p>
+
+        <p class="w-70 text-center line-height-1">Create your account today and start competing in tournaments, joining elite teams, and climbing the leaderboard.</p>
+
+        <button class="btn btn-gradient border-none" type="button">Sign Up Now</button>
+    </section>
 </main>
 
-<footer>
-    <div class="app-footer-top mt-2">
+<footer class="pt-2">
+    <div class="d-flex justify-between align-items-center mt-2 gap-2">
         <div>
-            <h1 class="app-title">E-Sport Nexus</h1>
-            <p>
+            <h2 class="app-title">E-Sport Nexus</h2>
+            <p class="w-50 my-2 fs-5 text-muted">
                 The ultimate platform for competitive gaming. Join
                 tournaments, connect with teams, and rise through
                 the ranks.
             </p>
 
-            <i class="app-footer-icon bx bxl-instagram bx-sm" ></i>
-            <i class="app-footer-icon bx bxl-twitter bx-sm" ></i>
-            <i class="app-footer-icon bx bxl-youtube bx-sm" ></i>
-            <i class="app-footer-icon bx bxl-twitch bx-sm" ></i>
+            <i class="p-1 rounded-2 border-info text-info bx bxl-instagram bx-sm mr-2" ></i>
+            <i class="p-1 rounded-2 border-info text-info bx bxl-twitter bx-sm mr-2" ></i>
+            <i class="p-1 rounded-2 border-info text-info bx bxl-youtube bx-sm mr-2" ></i>
+            <i class="p-1 rounded-2 border-info text-info bx bxl-twitch bx-sm mr-2" ></i>
         </div>
         <div>
-            <p class="font-weight-bold mb-1">Platform</p>
+            <p class="font-weight-bold mb-2">Platform</p>
             <ul class="none-list-style">
-                <li class="px-1">Tournaments</li>
-                <li class="px-1">Teams</li>
-                <li class="px-1">Games</li>
-                <li class="px-1">Rankings</li>
-                <li class="px-1">Live Streams</li>
+                <li class="footer-link py-1">Tournaments</li>
+                <li class="footer-link py-1">Teams</li>
+                <li class="footer-link py-1">Games</li>
+                <li class="footer-link py-1">Rankings</li>
+                <li class="footer-link py-1">Live Streams</li>
             </ul>
         </div>
         <div>
-            <p class="font-weight-bold mb-1">Company</p>
+            <p class="font-weight-bold mb-2">Company</p>
             <ul class="none-list-style">
-                <li class="px-1">About Us</li>
-                <li class="px-1">Careers</li>
-                <li class="px-1">Press Kit</li>
-                <li class="px-1">Partners</li>
-                <li class="px-1">Blog</li>
+                <li class="footer-link py-1">About Us</li>
+                <li class="footer-link py-1">Careers</li>
+                <li class="footer-link py-1">Press Kit</li>
+                <li class="footer-link py-1">Partners</li>
+                <li class="footer-link py-1">Blog</li>
             </ul>
         </div>
         <div>
-            <p class="font-weight-bold mb-1">Support</p>
+            <p class="font-weight-bold mb-2">Support</p>
             <ul class="none-list-style">
-                <li class="px-1">Help Center</li>
-                <li class="px-1">Terms of Service</li>
-                <li class="px-1">Privacy Policy</li>
-                <li class="px-1">Cookie Policy</li>
-                <li class="px-1">Contact</li>
+                <li class="footer-link py-1">Help Center</li>
+                <li class="footer-link py-1">Terms of Service</li>
+                <li class="footer-link py-1">Privacy Policy</li>
+                <li class="footer-link py-1">Cookie Policy</li>
+                <li class="footer-link py-1">Contact</li>
             </ul>
         </div>
     </div>
-    <div>
-        <div>
-            <i class="app-footer-icon bx bx-envelope bx-sm" ></i>
+    <div class="d-flex justify-between align-items-center mt-3 gap-2 border-muted-top py-3">
+        <div class="d-flex align-items-center gap-1">
+            <i class="p-1 rounded-2 border-info text-info bx bx-envelope bx-sm" ></i>
             <div>
-                <p>Email</p>
-                <a href="mailto:contact@esportnexus.gg">contact@esportnexus.gg</a>
+                <p class="text-muted mb-1">Email</p>
+                <a class="text-decoration-none text-white" href="mailto:contact@esportnexus.gg">contact@esportnexus.gg</a>
             </div>
         </div>
-        <div>
-            <i class="app-footer-icon bx bx-phone bx-sm" ></i>
+        <div class="d-flex align-items-center gap-1">
+            <i class="p-1 rounded-2 border-pink text-pink bx bx-phone bx-sm" ></i>
             <div>
-                <p>Phone</p>
-                <a href="tel:+1 (555) 123-4567">+1 (555) 123-4567</a>
+                <p class="text-muted mb-1">Phone</p>
+                <a class="text-decoration-none text-white" href="tel:+1 (555) 123-4567">+1 (555) 123-4567</a>
             </div>
         </div>
-        <div>
-            <i class="app-footer-icon bx bx-map bx-sm" ></i>
+        <div class="d-flex align-items-center gap-1">
+            <i class="p-1 rounded-2 border-info text-info bx bx-map bx-sm" ></i>
             <div>
-                <p>Location</p>
-                <a href="map:Los Angeles, CA">Los Angeles, CA</a>
+                <p class="text-muted mb-1">Location</p>
+                <a class="text-decoration-none text-white" href="#">Los Angeles, CA</a>
             </div>
         </div>
     </div>
-    <div>
-        <div>
+    <div class="text-muted d-flex justify-between align-items-center mt-3 gap-2 border-muted-top py-3">
+        <p>
             © 2025 E-Sport Nexus. All rights reserved.
-        </div>
+        </p>
         <div>
-            <a href="">Privacy</a>
-            <a href="">Terms</a>
-            <a href="">Cookies</a>
+            <ul class="none-list-style d-flex gap-2">
+                <li class="footer-link">Privacy</li>
+                <li class="footer-link">Terms</li>
+                <li class="footer-link">Cookies</li>
+            </ul>
         </div>
     </div>
 </footer>
