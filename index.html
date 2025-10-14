@@ -8,23 +8,27 @@
     <meta name="keywords" content="e-sport nexus,e-sport,nexus">
     <meta name="author" content="hajjvero">
 
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+
     <!-- Title -->
     <title>E-Sport Nexus | Home</title>
 
     <!-- Preload -->
     <link rel="preload" href="asset/css/style.css" as="style">
-    <link rel="preload" href="asset/lib/boxicon/boxicons.min.css" as="style">
+    <link rel="preload" href="asset/css/global.css" as="style">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="asset/css/style.css">
-    <link rel="stylesheet" href="asset/lib/boxicon/boxicons.min.css">
+    <link rel="stylesheet" href="asset/css/global.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- Javascript -->
     <script src="asset/script/app.js" defer></script>
 </head>
 <body>
 <header class="app-header">
-    <h1>E-Sport Nexus</h1>
+    <h1 class="app-title">E-Sport Nexus</h1>
 
     <nav>
         <a class="app-link" href="#">Home</a>
@@ -36,15 +40,100 @@
         <a class="app-link" href="#">Contact</a>
     </nav>
 
-    <button class="btn-join-tournament">Join Tournament</button>
+    <button class="btn-join-tournament" type="button">Join Tournament</button>
 </header>
 
-<main>
+<main class="app-main">
+    <p class="paragraph-hero">Join global tournaments, discover elite teams, and dominate the leaderboard.</p>
 
+    <div>
+        <button class="btn-start-competing" type="button">Start Competing</button>
+
+        <i class="bx bx-mouse bx-fade-up bx-lg hero-icon" ></i>
+
+        <button class="btn-watch-live" type="button">Watch Live</button>
+    </div>
 </main>
 
 <footer>
+    <div class="app-footer-top mt-2">
+        <div>
+            <h1 class="app-title">E-Sport Nexus</h1>
+            <p>
+                The ultimate platform for competitive gaming. Join
+                tournaments, connect with teams, and rise through
+                the ranks.
+            </p>
 
+            <i class="app-footer-icon bx bxl-instagram bx-sm" ></i>
+            <i class="app-footer-icon bx bxl-twitter bx-sm" ></i>
+            <i class="app-footer-icon bx bxl-youtube bx-sm" ></i>
+            <i class="app-footer-icon bx bxl-twitch bx-sm" ></i>
+        </div>
+        <div>
+            <p class="font-weight-bold mb-1">Platform</p>
+            <ul class="none-list-style">
+                <li class="px-1">Tournaments</li>
+                <li class="px-1">Teams</li>
+                <li class="px-1">Games</li>
+                <li class="px-1">Rankings</li>
+                <li class="px-1">Live Streams</li>
+            </ul>
+        </div>
+        <div>
+            <p class="font-weight-bold mb-1">Company</p>
+            <ul class="none-list-style">
+                <li class="px-1">About Us</li>
+                <li class="px-1">Careers</li>
+                <li class="px-1">Press Kit</li>
+                <li class="px-1">Partners</li>
+                <li class="px-1">Blog</li>
+            </ul>
+        </div>
+        <div>
+            <p class="font-weight-bold mb-1">Support</p>
+            <ul class="none-list-style">
+                <li class="px-1">Help Center</li>
+                <li class="px-1">Terms of Service</li>
+                <li class="px-1">Privacy Policy</li>
+                <li class="px-1">Cookie Policy</li>
+                <li class="px-1">Contact</li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <div>
+            <i class="app-footer-icon bx bx-envelope bx-sm" ></i>
+            <div>
+                <p>Email</p>
+                <a href="mailto:contact@esportnexus.gg">contact@esportnexus.gg</a>
+            </div>
+        </div>
+        <div>
+            <i class="app-footer-icon bx bx-phone bx-sm" ></i>
+            <div>
+                <p>Phone</p>
+                <a href="tel:+1 (555) 123-4567">+1 (555) 123-4567</a>
+            </div>
+        </div>
+        <div>
+            <i class="app-footer-icon bx bx-map bx-sm" ></i>
+            <div>
+                <p>Location</p>
+                <a href="map:Los Angeles, CA">Los Angeles, CA</a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div>
+            © 2025 E-Sport Nexus. All rights reserved.
+        </div>
+        <div>
+            <a href="">Privacy</a>
+            <a href="">Terms</a>
+            <a href="">Cookies</a>
+        </div>
+    </div>
 </footer>
 </body>
 </html>
