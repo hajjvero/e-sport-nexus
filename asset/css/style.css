@@ -66,6 +66,16 @@ body {
     box-shadow: 1px 1px 2rem var(--pink-color);
 }
 
+.blog-card-body {
+    transition: color 0.3s ease;
+}
+
+.blog-card-body:hover {
+    color: var(--info-color);
+    background-image: linear-gradient(to right, rgba(240, 200, 255, 0.25), rgba(176, 240, 255, 0.21));
+    cursor: grab;
+}
+
 /* =============== Footer classes =============== */
 
 .footer-link {
