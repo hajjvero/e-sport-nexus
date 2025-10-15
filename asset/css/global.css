@@ -103,6 +103,7 @@
 
 .justify-center     { justify-content: center; }
 .justify-between    { justify-content: space-between; }
+.justify-around    { justify-content: space-around; }
 .align-items-center { align-items: center; }
 .flex-column        { flex-direction: column; }
 .flex-row           { flex-direction: row; }
