@@ -1,4 +1,13 @@
 /* ===============================
+   Root variables
+   =============================== */
+:root {
+    --info-color: #00CFFF;
+    --pink-color: #BF00FF;
+    --muted-color: #7c848e;
+}
+
+/* ===============================
    Spacing Utilities
    =============================== */
 
@@ -59,9 +68,9 @@
 .text-right     { text-align: right; }
 .text-left      { text-align: left; }
 
-.text-muted      { color: #7c848e; }
-.text-info       { color: #00CFFF; }
-.text-pink       { color: #BF00FF; }
+.text-muted      { color: var(--muted-color); }
+.text-info       { color: var(--info-color); }
+.text-pink       { color: var(--pink-color); }
 .text-white      { color: white; }
 
 .text-decoration-none { text-decoration: none; }
@@ -102,6 +111,15 @@
 .gap-1              { gap: 1rem; }
 .gap-2              { gap: 2rem; }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 1 0 0;
+}
+
 /* ===============================
    List & Border Utilities
    =============================== */
@@ -109,11 +127,11 @@
 .none-list-style { list-style: none; padding-left: 0; }
 
 .border-none    { border: none; }
-.border         { border: 1px solid #dee2e6; }
-.border-info    { border: 1px solid #00CFFF; }
-.border-pink    { border: 1px solid #BF00FF; }
-.border-muted    { border: 1px solid #7c848e; }
-.border-muted-top { border-top: 1px solid #7c848e; }
+.border         { border: 1px solid white; }
+.border-info    { border: 1px solid var(--info-color); }
+.border-pink    { border: 1px solid var(--pink-color); }
+.border-muted    { border: 1px solid var(--muted-color); }
+.border-muted-top { border-top: 1px solid var(--muted-color); }
 
 .rounded-1      { border-radius: 0.25rem; }
 .rounded-2      { border-radius: 0.5rem; }
@@ -149,8 +167,8 @@
     padding: 1rem 2rem;
     border-radius: 1rem;
     transition: transform 0.3s ease;
-    background-image: linear-gradient(to right, #0DCDF8, #BF00FF);
-    box-shadow: 0 0 2rem #0DCDF8;
+    background-image: linear-gradient(to right, var(--info-color), var(--pink-color));
+    box-shadow: 0 0 2rem var(--info-color);
 }
 
 .btn-gradient:hover {
@@ -158,8 +176,8 @@
 }
 
 .btn-outline-info {
-    color: #0DCDF8;
-    border: #0DCDF8 2px solid;
+    color: var(--info-color);
+    border: var(--info-color) 2px solid;
     background-color: transparent;
     transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -167,4 +185,48 @@
 .btn-outline-info:hover {
     transform: scale(1.1);
     color: white;
+}
+
+/* ===============================
+   Opacity Utilities
+   =============================== */
+
+.opacity-100 {
+    opacity: 1;
+}
+
+.opacity-50 {
+    opacity: 0.5;
+}
+
+.opacity-25 {
+    opacity: 0.25;
+}
+
+
+/* ===============================
+   Card Utilities
+   =============================== */
+
+.card {
+    border-radius: 1rem;
+    border: 1px solid  var(--muted-color);
+    box-shadow: 1px 1px 0.5rem var(--muted-color);
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+/* ===============================
+   Hover Utilities
+   =============================== */
+.hover-scale-1 {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale-1:hover {
+    transform: scale(1.1);
 }
