@@ -54,6 +54,18 @@ body {
     color: var(--info-color);
 }
 
+/* =============== Team main classes =============== */
+
+.team-number {
+    background-image: linear-gradient(to right, var(--pink-color), var(--info-color));
+    padding: 2rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    box-shadow: 1px 1px 2rem var(--pink-color);
+}
+
 /* =============== Footer classes =============== */
 
 .footer-link {
