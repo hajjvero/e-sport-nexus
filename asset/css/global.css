@@ -261,3 +261,21 @@
 .hover-scale-1:hover {
     transform: scale(1.1);
 }
+
+/* ===============================
+   Form Utilities
+   =============================== */
+.form-label {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.form-control {
+    display: block;
+    min-width: 100%;
+    min-height: 2.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--muted-color);
+    padding: 0.5rem;
+    margin: 0.2rem 0;
+}
